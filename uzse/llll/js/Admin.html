@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://gasoil.uz/public/admin/catalog/edit/22 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="csrf-token" content="bftH7wZG7yfCC1rnyMt6FNaGWyD2fAtfyzL6pDhH">
+	<title>Admin</title>
+
+	<!-- Styles -->
+	<link href="./Admin_files/app.css" rel="stylesheet">
+
+	<!-- Fonts and OneUI framework -->
+	<link rel="stylesheet" href="./Admin_files/css2">
+	<link rel="stylesheet" id="css-main" href="./Admin_files/oneui.min.css">
+<style>.cke{visibility:hidden;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;box-sizing: content-box;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+<body>
+	<div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow side-trans-enabled"><div id="page-overlay"></div>
+
+		<header id="page-header">
+	<!-- Header Content -->
+	<div class="content-header">
+		<!-- Left Section -->
+		<div class="d-flex align-items-center">
+			<!-- Toggle Sidebar -->
+			<!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+			<button type="button" class="btn btn-sm btn-dual mr-2 d-lg-none" data-toggle="layout" data-action="sidebar_toggle">
+				<i class="fa fa-fw fa-bars"></i>
+			</button>
+			<!-- END Toggle Sidebar -->
+
+			<!-- Toggle Mini Sidebar -->
+			<!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+			<button type="button" class="btn btn-sm btn-dual mr-2 d-none d-lg-inline-block" data-toggle="layout" data-action="sidebar_mini_toggle">
+				<i class="fa fa-fw fa-ellipsis-v"></i>
+			</button>
+			<!-- END Toggle Mini Sidebar -->
+
+			<button type="button" class="btn btn-sm btn-dual d-md-none" data-toggle="layout" data-action="header_search_on">
+				<i class="fa fa-fw fa-search"></i>
+			</button>
+			<!-- END Open Search Section -->
+
+			<!-- Search Form (visible on larger screens) -->
+			<form class="d-none d-md-inline-block" action="./Admin_files/22" method="POST">
+				<div class="input-group input-group-sm">
+					<input type="text" class="form-control form-control-alt" placeholder="Search.." id="page-header-search-input2" name="page-header-search-input2">
+					<div class="input-group-append">
+                                    <span class="input-group-text bg-body border-0">
+                                        <i class="fa fa-fw fa-search"></i>
+                                    </span>
+					</div>
+				</div>
+			</form>
+			<!-- END Search Form -->
+		</div>
+		<!-- END Left Section -->
+
+		<!-- Right Section -->
+		<div class="d-flex align-items-center">
+			<!-- User Dropdown -->
+			<div class="dropdown d-inline-block ml-2">
+				<button type="button" class="btn btn-sm btn-dual d-flex align-items-center" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="d-none d-sm-inline-block ml-2">Admin</span>
+					<i class="fa fa-fw fa-angle-down d-none d-sm-inline-block ml-1 mt-1"></i>
+				</button>
+				<div class="dropdown-menu dropdown-menu-md dropdown-menu-right p-0 border-0" aria-labelledby="page-header-user-dropdown">
+
+					<div class="p-2">
+						<a class="dropdown-item d-flex align-items-center justify-content-between" href="https://gasoil.uz/public/admin/logout">
+							<span class="font-size-sm font-w500">Log Out</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- END User Dropdown -->
+		</div>
+		<!-- END Right Section -->
+	</div>
+	<!-- END Header Content -->
+
+	<!-- Header Search -->
+	<div id="page-header-search" class="overlay-header bg-white">
+		<div class="content-header">
+			<form class="w-100" action="./Admin_files/22" method="POST">
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+						<button type="button" class="btn btn-alt-danger" data-toggle="layout" data-action="header_search_off">
+							<i class="fa fa-fw fa-times-circle"></i>
+						</button>
+					</div>
+					<input type="text" class="form-control" placeholder="Search or hit ESC.." id="page-header-search-input" name="page-header-search-input">
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- END Header Search -->
+
+	<!-- Header Loader -->
+	<!-- Please check out the Loaders page under Components category to see examples of showing/hiding it -->
+	<div id="page-header-loader" class="overlay-header bg-white">
+		<div class="content-header">
+			<div class="w-100 text-center">
+				<i class="fa fa-fw fa-circle-notch fa-spin"></i>
+			</div>
+		</div>
+	</div>
+	<!-- END Header Loader -->
+</header>
+		<!-- Sidebar -->
+<nav id="sidebar" aria-label="Main Navigation">
+	<!-- Side Header -->
+	<div class="content-header bg-white-5">
+		<!-- Logo -->
+		<a class="font-w600 text-dual" href="https://gasoil.uz/admin">
+                        <span class="smini-visible">
+                            <i class="fa fa-circle-notch text-primary"></i>
+                        </span>
+			<span class="smini-hide font-size-h5 tracking-wider">
+                            Admin<span class="font-w400">Page</span>
+                        </span>
+		</a>
+		<!-- END Logo -->
+	</div>
+	<!-- END Side Header -->
+
+	<!-- Sidebar Scrolling -->
+	<div class="js-sidebar-scroll" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden;"><div class="simplebar-content" style="padding: 0px;">
+		<!-- Side Navigation -->
+		<div class="content-side">
+			<ul class="nav-main">
+				<li class="nav-main-item">
+					<a class="nav-main-link" href="https://gasoil.uz/">
+						<i class="nav-main-link-icon si si-layers"></i>
+						<span class="nav-main-link-name">Front Page</span>
+					</a>
+				</li>
+				<li class="nav-main-item">
+					<a class="nav-main-link " href="https://gasoil.uz/public/admin">
+						<i class="nav-main-link-icon si si-speedometer"></i>
+						<span class="nav-main-link-name">Dashboard</span>
+					</a>
+				</li>
+				<li class="nav-main-heading"></li>
+				<li class="nav-main-item">
+					<a class="nav-main-link active" href="https://gasoil.uz/public/admin/catalog">
+						<i class="nav-main-link-icon si si-layers"></i>
+						<span class="nav-main-link-name">Catalogs</span>
+					</a>
+				</li>
+				<li class="nav-main-item">
+					<a class="nav-main-link " href="https://gasoil.uz/public/admin/product">
+						<i class="nav-main-link-icon si si-grid"></i>
+						<span class="nav-main-link-name">Products</span>
+					</a>
+				</li>
+				<li class="nav-main-heading">Settings</li>
+				<li class="nav-main-item">
+					<a class="nav-main-link " href="https://gasoil.uz/public/admin/brand">
+						<i class="nav-main-link-icon si si-badge"></i>
+						<span class="nav-main-link-name">Brands</span>
+					</a>
+				</li>
+				<li class="nav-main-item">
+					<a class="nav-main-link " href="https://gasoil.uz/public/admin/property">
+						<i class="nav-main-link-icon si si-puzzle"></i>
+						<span class="nav-main-link-name">Property</span>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<!-- END Side Navigation -->
+	</div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 351px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="height: 0px; display: none;"></div></div></div>
+	<!-- END Sidebar Scrolling -->
+</nav>
+<!-- END Sidebar -->
+		<main id="main-container">
+							<div class="content">
+		<!-- Info -->
+		<div class="block block-rounded">
+			<div class="block-header block-header-default">
+				<h3 class="block-title"> Edit Catalog </h3>
+			</div>
+			<div class="block-content">
+				<div class="row justify-content-center">
+					<div class="col-md-10 col-lg-8">
+						<form action="https://gasoil.uz/public/admin/catalog" method="POST" enctype="multipart/form-data">
+							<input type="hidden" name="_token" value="bftH7wZG7yfCC1rnyMt6FNaGWyD2fAtfyzL6pDhH">
+															<div class="form-group">
+									<label for="one-ecom-product-id">ID</label>
+									<input type="text" class="form-control" id="one-ecom-product-id" name="id" value="22" readonly="">
+								</div>
+														<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="one-ecom-product-name" name="name" value="Легковые моторные масла" required="" minlength="3">
+							</div>
+							<div class="form-group">
+								<label for="description">Description</label>
+								<textarea class="form-control" name="description" value="" rows="4"></textarea>
+							</div>
+							<div class="form-group row">
+								<div class="col-md-6">
+									<label for="priority">Priority</label>
+									<input type="number" class="form-control" name="priority" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<select class="form-control" id="parent" name="parent">
+									<option value="">No parent</option>
+																			<option value="1">
+											Индустриальные
+										</option>
+																			<option value="2">
+											Трансмиссионные масла
+										</option>
+																			<option value="3">
+											Компрессорные масла
+										</option>
+																			<option value="4">
+											Дизельные моторные масла
+										</option>
+																			<option value="5">
+											Гидравлические масла
+										</option>
+																			<option value="6">
+											Турбинные масла
+										</option>
+																			<option value="7">
+											Редукторные масла
+										</option>
+																			<option value="8">
+											Литиевые смазки
+										</option>
+																			<option value="9">
+											Смазки
+										</option>
+																			<option value="10">
+											Масла-теплоносители
+										</option>
+																			<option value="11">
+											Шпиндельные масла
+										</option>
+																			<option value="12">
+											Циркуляционные масла
+										</option>
+																			<option value="13">
+											СОЖ
+										</option>
+																			<option value="14">
+											Масла для станков
+										</option>
+																			<option value="15">
+											Прочие индустриальные масла
+										</option>
+																			<option value="16" selected="">
+											Коммерческие
+										</option>
+																			<option value="20">
+											Дизельные моторные масла
+										</option>
+																			<option value="21">
+											Трансмиссионные масла
+										</option>
+																			<option value="22">
+											Легковые моторные масла
+										</option>
+																			<option value="23">
+											Прочие коммерческие масла
+										</option>
+																	</select>
+							</div>
+							<div class="form-group">
+								<label for="image">Image</label>
+								<input type="file" class="form-control" accept="image/*" data-preview="#preview" name="image" id="inputFile">
+								<br>
+								<img src="./Admin_files/22" alt="image" class="img-thumbnail" width="200">
+							</div>
+							<div class="form-group">
+								<label>Published?</label>
+								<div class="custom-control custom-switch mb-1">
+									<input type="checkbox" class="custom-control-input" id="one-ecom-product-published" name="status" checked="">
+									<label class="custom-control-label" for="one-ecom-product-published"></label>
+								</div>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-alt-success">Update</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		</main>
+	</div>
+
+
+<script src="./Admin_files/oneui.core.min.js"></script>
+
+<script src="./Admin_files/oneui.app.min.js"></script>
+
+<!-- Page JS Plugins -->
+<script src="./Admin_files/jquery.sparkline.min.js"></script>
+<script src="./Admin_files/Chart.bundle.min.js"></script>
+
+<script src="./Admin_files/summernote-bs4.min.js"></script>
+<script src="./Admin_files/ckeditor.js"></script>
+<script src="./Admin_files/simplemde.min.js"></script>
+
+
+<!-- Page JS Code -->
+<script src="./Admin_files/be_pages_dashboard.min.js"></script>
+
+<!-- Page JS Helpers (jQuery Sparkline Plugins) -->
+<script>jQuery(function () {
+        One.helpers(['sparkline', 'summernote', 'ckeditor', 'simplemde']);
+    });</script>
+
+
+</body></html>
